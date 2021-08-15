@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+
+/*
+..Nav page stylings
+*/
+
+.header {
+  height: 7vh;
+  background-color: grey;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+/*
+..Hero page stylings
+*/
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+/*
+..About page stylings
+*/
+
+.about__container {
+  height: 70vh;
+  background-color: lightslategray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__profile-img {
+  text-align: center;
+
+  img{
+    height: auto;
+    width: 30%;
+    border-radius: 50%;
+  }
+}
+
+.about__description {
+  width: 60%;
+}
