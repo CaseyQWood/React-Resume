@@ -53,3 +53,26 @@ body {
 .about__description {
   width: 60%;
 }
+
+/*
+..Carousel
+*/
+
+.slick-list {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto !important;
+}
+
+.slick-next {  
+  right: 0 !important;  
+}
+.slick-prev {
+  left: 0 !important;
+}
+
+.slick-next::before, .slick-prev::before {
+  color: black !important;
+  
+}
+
