@@ -12,8 +12,7 @@ export default function About() {
 
       <div className='about__description'>
         <p>
-          This is just a longer stretch of fake text that will be later 
-          filled with the personal outline of my self. probably take from my resume 
+        Addicted to learning and pushing to improve. I am some one who is always eager to pick up a new skill and always willing to adapt to challenges. In my spare time I typically spend my time tinkering on projects, playing warhammer or video games 
         </p>
       </div>
 
