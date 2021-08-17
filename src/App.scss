@@ -7,11 +7,32 @@ body {
 */
 
 .header {
+  position: fixed;
+  width: 100%;
   height: 7vh;
-  background-color: grey;
+  color: #D3D0CB;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  h3 {
-    margin: 0;
+  h2 {
+    margin: auto 1em;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Fira Sans', sans-serif;
+  
+  }
+
+  h2:hover {
+    color: #9C6615;
+  }
+
+  &--show {
+    background-color: #242526
+  }
+
+  &--hiden {
+    background-color: none;
   }
 }
 
@@ -25,7 +46,25 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: lightgray;
+  background: url('./image-from-rawpixel-id-2252698-jpeg.jpg');
+  color: #D3D0CB;
+
+  h1 {
+    font-size: 5em;
+    border-bottom: thick double #9C6615;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  h2 {
+    width: 75%;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'Fira Sans'
+    
+    
+  }
+  
 }
 
 /*
@@ -58,6 +97,10 @@ body {
 ..Carousel
 */
 
+.slider__container {
+  height: 30vh;
+}
+
 .slick-list {
   width: 75%;
   text-align: center;
@@ -76,3 +119,11 @@ body {
   
 }
 
+.card__icon {
+  width: 33%;
+  margin: 0 auto;
+} 
+
+.slick-slider {
+  top: 50%;
+}

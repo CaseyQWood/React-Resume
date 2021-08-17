@@ -2,6 +2,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
+import Card from "./Card";
+import jsIcon from '../../images/card-img/JS.png'
+import nodeIcon from '../../images/card-img/nodeJs.png'
+import psqlIcon from '../../images/card-img/psql.png'
+import reactIcon from '../../images/card-img/react.png'
+import sassIcon from '../../images/card-img/sass.png'
+import threeIcon from '../../images/card-img/three.png'
 
 export default function Carousel() {
   var settings = {
@@ -11,26 +18,33 @@ export default function Carousel() {
     slidesToShow: 3,
     slidesToScroll: 1
   };
+
+  const language = [
+    {
+      icon: jsIcon,
+      name: 'JavaScript'
+    },
+    {
+      icon: nodeIcon,
+      name: 'NodeJs'
+    },
+    {
+      icon: psqlIcon,
+      name: 'PostresSql'
+    },
+    {
+      icon: reactIcon,
+      name: 'React'
+    }
+  ]
+
+
   return (
-    <Slider {...settings}>
-      <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
+    <div className='slider__container'> 
+      <Slider {...settings}>
+        {language.map((obj, index) => (<Card key={index} icon={obj.icon} name={obj.name}/>))}
+      </Slider>
+    </div>
+    
   );
 }
