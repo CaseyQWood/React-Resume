@@ -85,7 +85,7 @@ body {
   margin: auto;
   img{
     height: auto;
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
     
   }
@@ -109,7 +109,10 @@ body {
 
 .slider__container {
   height: 30vh;
-  background-color: #242526
+  background-color: #242526;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slick-list {
@@ -134,3 +137,6 @@ body {
   margin: 0 auto;
 } 
 
+.slick-dots li button:before {
+  color: orange !important;
+}
