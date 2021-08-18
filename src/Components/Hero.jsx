@@ -4,7 +4,7 @@ import '../App.scss'
 export default function Hero() {
 
   return (
-    <div className='hero__container'>
+    <div id='home__page' className='hero__container'>
       <h1>
         This is Casey Wood!
       </h1>

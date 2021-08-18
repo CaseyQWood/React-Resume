@@ -8,6 +8,6 @@ export default function useVisable() {
       window.pageYOffset > 5 ? setVisable(false) : setVisable(true)
     }
   })
-  console.log('inside hook',visable)
+  
   return visable
 }
