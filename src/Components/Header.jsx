@@ -6,17 +6,17 @@ export default function Header() {
   const visable = useVisable()
   
   const className = classNames('header', {
-    'header--hidden': !visable,
-    'header--show': visable 
+    'header--hidden': visable,
+    'header--show': !visable 
   })
 
   return (
     <header className={className}>
-      <h2>Home</h2>
-      <h2>About</h2>
-      <h2>Experience</h2>
-      <h2>Portfolio</h2>
-      <h2>Contact</h2>
+      <h2><a href='#home__page' >Home</a></h2>
+      <h2><a href='#about__page' >About</a></h2>
+      <h2><a href='#expierence__page' >Experience</a></h2>
+      <h2><a href='#portfolio__page' >Portfolio</a></h2>
+      <h2><a href='#contact__page' >Contact</a></h2>
     </header>
   )
 }

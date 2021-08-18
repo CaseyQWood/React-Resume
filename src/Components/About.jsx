@@ -4,7 +4,7 @@ import profile from '../images/black-white-profile.jpg'
 export default function About() {
 
   return (
-    <div className='about__container'>
+    <div id='about__page' className='about__container'>
 
       <div className='about__profile-img'>
         <img src={profile} alt='profile'></img>
