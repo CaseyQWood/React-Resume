@@ -7,11 +7,11 @@ import Card from "./Card";
 
 import useWindowDimensions from "../../Hooks/useWindowSize";
 
-import jsIcon from '../../images/card-img/JS.png'
-import nodeIcon from '../../images/card-img/nodeJs.png'
-import psqlIcon from '../../images/card-img/psql.png'
-import reactIcon from '../../images/card-img/react.png'
-import sassIcon from '../../images/card-img/sass.png'
+import jsIcon from '../../images/card-img/js_prev_ui (2).png'
+import nodeIcon from '../../images/card-img/nodeJs_prev_ui.png'
+import psqlIcon from '../../images/card-img/slazzer-edit-image (6).png'
+import reactIcon from '../../images/card-img/react_prev_ui.png'
+import sassIcon from '../../images/card-img/sass_prev_ui.png'
 import threeIcon from '../../images/card-img/three.png'
 
 

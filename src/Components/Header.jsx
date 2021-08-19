@@ -10,13 +10,21 @@ export default function Header() {
     'header--show': !visable 
   })
 
+  const scrollToTop = () => {
+    console.log('test')
+    //  window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+     document.getElementById("contact__page").scrollIntoView({behavior: 'smooth'});
+  }
+
+ 
+
   return (
-    <header className={className}>
-      <h2><a href='#home__page' >Home</a></h2>
-      <h2><a href='#about__page' >About</a></h2>
-      <h2><a href='#expierence__page' >Experience</a></h2>
-      <h2><a href='#portfolio__page' >Portfolio</a></h2>
-      <h2><a href='#contact__page' >Contact</a></h2>
-    </header>
+    <ul className={className}>
+      <li onClick={() => document.getElementById("home__page").scrollIntoView({behavior: 'smooth'})}>Home</li>
+      <li onClick={() => document.getElementById("about__page").scrollIntoView({behavior: 'smooth'})}>About</li>
+      <li onClick={() => document.getElementById("expierence__page").scrollIntoView({behavior: 'smooth'})}>Experience</li>
+      <li onClick={() => document.getElementById("portfolio__page").scrollIntoView({behavior: 'smooth'})}>Portfolio</li>
+      <li onClick={() => document.getElementById("contact__page").scrollIntoView({behavior: 'smooth'})} >Contact</li>
+    </ul>
   )
 }
