@@ -19,7 +19,7 @@ export default function Hero() {
               <rect class="clip-path" x="0" y="0" width="100%" height="100%"/>
             </clipPath>
             <clipPath id="mask-bottom-left">
-              <rect class="clip-path" x="0" y="0" width="30%" height="100%"/>
+              <rect class="clip-path" x="70%" y="0" width="30%" height="100%"/>
             </clipPath>
           </defs>
           
