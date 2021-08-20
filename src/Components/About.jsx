@@ -6,6 +6,10 @@ export default function About() {
   return (
     <div id='about__page' className='about__container'>
 
+      <h2>About Me:</h2>
+
+      <div className='about__body'>
+
       <div className='about__profile-img'>
         <img src={profile} alt='profile'></img>
       </div>
@@ -16,6 +20,7 @@ export default function About() {
         </p>
       </div>
 
+      </div>
     </div>
   )
 }
