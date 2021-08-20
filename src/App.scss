@@ -16,6 +16,7 @@ body {
   flex-direction: row;
   justify-content: center;
   list-style-type: none;
+  z-index: 1;
   
 
   li {
@@ -44,6 +45,10 @@ body {
 /*
 ..Hero page stylings
 */
+$red: #9C6615;
+
+
+
 
 .hero__container {
   display: flex;
@@ -71,6 +76,135 @@ body {
   }
   
 }
+
+.animation {
+  width: 60em;
+  height: 4em;
+  margin: 1em auto;
+  position: relative;
+}
+
+.main { // parent class
+  margin-top: 25%;
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+  .mask {
+    overflow: hidden;
+    position: relative;
+  }
+
+@keyframes animation-5-bottom-right {
+  0% {transform: translate3d(-100%, 96%, 0);}
+  8% {transform: translate3d(-100%, 96%, 0);}  
+  30% {transform: translate3d(0, 96%, 0);}  
+  38% {transform: translate3d(0, 0, 0);}
+}
+
+@keyframes animation-5-top {
+  0% {transform: translate3d(100%, 0, 0);}  
+  38% {transform: translate3d(100%, 0, 0);}  
+  58% {transform: translate3d(0, 0, 0);}
+}
+
+@keyframes animation-5-bottom-left {
+  0% {transform: translate3d(-98%, -100%, 0);}  
+  58% {transform: translate3d(-98%, -100%, 0);}  
+  64% {transform: translate3d(-98%, 0, 0);}  
+  84% {transform: translate3d(0, 0, 0);}
+}
+
+@keyframes animation-5-text-name {
+  0% {transform: translate3d(0, 100%, 0);}
+  25% {transform: translate3d(0, 100%, 0);}
+  45% {transform: translate3d(0, 0, 0);}
+}
+
+@keyframes animation-5-text-title {
+  0% {transform: translate3d(0, -100%, 0);}
+  35% {transform: translate3d(0, -100%, 0);}
+  55% {transform: translate3d(0, 0, 0);}
+  
+}
+
+#animation-5 {
+  text-align: center;
+  height: 10.5em;
+  
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+    
+  line {
+    stroke-width: 12px;
+    stroke: $red;
+  }
+  
+  // change the 1 to how ever many iterations you want or infinate for a loop
+  div,
+  .clip-path {
+    animation: 3.1s ease-out 1 alternate both;
+  }
+  
+  .bottom-right,
+  .right {
+    clip-path: url(#mask-bottom-right);
+  }
+  
+  .top {
+    clip-path: url(#mask-top);
+  }
+  
+  .bottom-left,
+  .left {
+    clip-path: url(#mask-bottom-left);
+  }
+  
+  #mask-bottom-right > .clip-path {
+      animation-name: animation-5-bottom-right;
+  }
+  
+  #mask-top > .clip-path {
+      animation-name: animation-5-top;
+  }
+  
+  #mask-bottom-left > .clip-path {
+      animation-name: animation-5-bottom-left;
+  }
+  
+  & > div:nth-child(2) {
+    font-size: 6em;
+    padding-top: .4em;
+    
+    div {
+      animation-name: animation-5-text-name;
+    }
+  }
+  
+  & > div:nth-child(3) {
+    font-size: 2.7em;
+    letter-spacing: .7px;
+    margin-top: .2em;
+    
+    div {
+      animation-name: animation-5-text-title;
+    }
+  }
+}
+
+
+
 
 /*
 ..About page stylings

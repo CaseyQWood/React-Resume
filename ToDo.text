@@ -1,0 +1,26 @@
+## Header
+- Nav items should be <li> wrapped with <ul> -------------------------
+- margin only required on right side of <li> remove on :last-child---- this is not needed
+
+
+##Home page
+- Arrow on bottom use icon -- add hover effect
+- Name animation https://codepen.io/mattchestnut/pen/dMrONe
+- add opaque background behind text to ensure text doesn't get lost in background
+
+##About page
+- Title "About" _ may line across top and 15% height down from right corner
+- text same colour as title
+- social icons (github, linkedin, email) maybe under right border in <li> down and on hover shows username info
+- Showcase computer building, 3d printing, and warhammer for about
+
+## Carousel
+  - Title on languages 
+  - make arrows bigger and more visable 60:30 color ratio
+  - align all title to either top or bottom to adjacent title
+  - get better pictures and standarize width https://www.flaticon.com/search?word=javascript&style=all&order_by=4&type=icon
+
+## Projects
+- Same title style as about (Maybe stagger font and line + background colour for sections) 
+    - ie. First section Orange Text Black background -- Second section Black text orange background
+
