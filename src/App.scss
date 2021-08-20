@@ -138,9 +138,6 @@ $red: #9C6615;
   
 }
 
-
-
-
 #animation-5 {
 
   text-align: center;
@@ -236,23 +233,42 @@ $red: #9C6615;
 ..About page stylings
 */
 
+.about__container {
+  height: 70vh;
+  background-color: #16262E;
 
+  h2 {
+    height: 10%;
+    margin: 0 5%;
+    padding-top: 1em;
+    color: #D3D0CB;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-family: 'Fira Sans';
+
+    border-bottom: #9C6615 3px solid;
+  }
+
+}
 
 @media (max-width: 1000px) {
-  .about__container {
-    height: 70vh;
+  .about__body { 
     background-color: #16262E;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80%;
+    margin: 0 5%;
+    border-right: #9C6615 3px solid
   }
   
   .about__profile-img {
     text-align: center;
+    width: 50%;
     margin: auto;
+    
     img{
-      height: auto;
-      width: 50%;
+      width: 75%;
       border-radius: 50%;
       
     }
@@ -272,22 +288,23 @@ $red: #9C6615;
 }
 
 @media (min-width: 1001px) {
-  .about__container {
-    height: 70vh;
+  .about__body {
     background-color: #16262E;
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 80%;
+    margin: 0 5%;
+    border-right: #9C6615 3px solid
   }
   
   .about__profile-img {
     text-align: center;
-    margin: auto;
+    width: 50%;
+
     img{
-      height: auto;
-      width: 50%;
+      width: 45%;
       border-radius: 50%;
-      
     }
   }
   
