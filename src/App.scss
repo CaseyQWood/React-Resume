@@ -17,13 +17,17 @@ body {
   justify-content: center;
   list-style-type: none;
   z-index: 1;
-  
+  transition: all .8s;
+
+  &.header--show li{
+    transition: all .8s;
+  }
 
   li {
-    margin: 1em 1em;
+    padding: 1em 1.5em;
     text-align: center;
     font-size: 1.5em;
-    font-weight: 200;
+    font-weight: 300;
     font-family: 'Fira Sans', sans-serif;
     color: #D3D0CB;
     text-decoration-line: none;
@@ -51,10 +55,6 @@ $red: #9C6615;
 
 
 .hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background: url('./image-from-rawpixel-id-2252698-jpeg.jpg');
   color: #D3D0CB;
@@ -65,16 +65,7 @@ $red: #9C6615;
     font-family: 'Fira Sans', sans-serif;
   }
 
-  h2 {
-    width: 75%;
-    text-align: center;
-    font-weight: 200;
-    font-style: italic;
-    font-family: 'Fira Sans'
-    
-    
-  }
-  
+
 }
 
 .animation {
@@ -85,19 +76,30 @@ $red: #9C6615;
 
   width: 40em;
   height: 4em;
-  margin: 1em auto;
+  margin: 10% auto 0 auto;
   position: relative;
 }
 
 .main { // parent class
-  margin-top: 25%;
   font-family: 'Fira Sans', sans-serif;
   text-transform: uppercase;
   line-height: 1;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  h2 {
+    width: 75%;
+    margin: 3em auto 0 auto;
+    text-transform: none;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'Fira Sans'
+    
+    
+  }
 }
 
   .mask {
@@ -235,7 +237,7 @@ $red: #9C6615;
 
 .about__container {
   height: 70vh;
-  background-color: #16262E;
+  background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
 
   h2 {
     height: 10%;
@@ -253,13 +255,14 @@ $red: #9C6615;
 
 @media (max-width: 1000px) {
   .about__body { 
-    background-color: #16262E;
+    background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 80%;
     margin: 0 5%;
-    border-right: #9C6615 3px solid
+    border-right: #9C6615 3px solid;
+
   }
   
   .about__profile-img {
@@ -289,7 +292,7 @@ $red: #9C6615;
 
 @media (min-width: 1001px) {
   .about__body {
-    background-color: #16262E;
+    background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
     display: flex;
     flex-direction: row;
     align-items: center;

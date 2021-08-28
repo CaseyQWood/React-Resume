@@ -1,6 +1,7 @@
 ## Header
 - Nav items should be <li> wrapped with <ul> -------------------------
 - margin only required on right side of <li> remove on :last-child---- this is not needed
+- transitiono on header appearance
 
 
 ##Home page
@@ -21,6 +22,7 @@
   - get better pictures and standarize width https://www.flaticon.com/search?word=javascript&style=all&order_by=4&type=icon
 
 ## Projects
+
 - Same title style as about (Maybe stagger font and line + background colour for sections) 
     - ie. First section Orange Text Black background -- Second section Black text orange background
 
