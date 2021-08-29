@@ -238,6 +238,7 @@ $red: #9C6615;
 .middle{
   text-align: center;
 }
+
 .social-button{
   display: inline-block;
   width: 90px;
@@ -250,12 +251,12 @@ $red: #9C6615;
   overflow: hidden;
   position: relative;
 }
-.social-button i{
-  line-height: 90px;
-  font-size: 26px;
+.social-button svg{
+  margin-top: 25px;
+  font-size: 40px;
   transition: 0.2s linear;
 }
-.social-button:hover i{
+.social-button:hover svg{
   transform: scale(1.3);
   color: #f1f1f1;
 }
@@ -285,11 +286,6 @@ $red: #9C6615;
     top: -10%;
     left: -10%;
   }
-}
-
-
-.slick-initialized {
-  visibility: hidden;
 }
 
 .about__container {
@@ -409,12 +405,64 @@ $red: #9C6615;
 ..Carousel
 */
 
+// .c-slick {
+//   font-size: 0;
+//     line-height: 0;
+//     position: absolute;
+//     top: 50%;
+//     display: block;
+//     width: 20px;
+//     height: 20px;
+//     padding: 0;
+//     transform: translate(0, -50%);
+//     cursor: pointer;
+//     color: transparent;
+//     border: none;
+//     outline: none;
+//     background: transparent;
+// }
+
+.c-slick__prev {
+  left: 20px !important;
+}
+
+.c-slick__next {
+  right: 20px !important;
+}
+
+.c-slick {
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  font-size: 25px;
+  svg {
+    fill: white !important;
+    path {
+      fill: white !important;
+    }
+  }
+}
+
+.card__contianer {
+  .icon__lan {
+    font-size: 40px;
+  }
+  svg {
+    fill: white;
+
+    path{
+      color: white;
+    }
+  }
+}
+
 .slider__container {
   height: 30vh;
   background-color: #242526;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -.5em;
 }
 
 .slick-list {

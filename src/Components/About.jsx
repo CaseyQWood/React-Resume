@@ -1,5 +1,7 @@
 import React from 'react'
 import profile from '../images/black-white-profile.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin, } from '@fortawesome/free-brands-svg-icons'
 
 export default function About() {
 
@@ -27,10 +29,10 @@ export default function About() {
 
           <div class="middle">
             <a class="social-button" href="#">
-              <i class="fab fa-facebook-f"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </a>
             <a class="social-button" href="#">
-              <i class="fab fa-wordpress"></i>
+            <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
 
