@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.scss'
+import _scrollTo from '../helperFunctions/scrollTo'
 
 export default function Hero() {
 
@@ -38,14 +39,13 @@ export default function Hero() {
         </div>
 
       <h2>Addicted to learning and pushing to improve. I am some one who is always eager to pick up a new skill and always willing to adapt to challenges. In my spare time I typically spend my time tinkering on projects, playing warhammer or video games</h2>
+      
+      <div class="box" onClick={() => _scrollTo("#about__page")} >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-
-      {/* <h1>
-        This is Casey Wood!
-      </h1> */}
-
-
-
 
 
 
