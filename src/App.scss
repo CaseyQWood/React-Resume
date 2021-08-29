@@ -552,7 +552,7 @@ $red: #9C6615;
 }
 
 .container {
-	max-width:900px;
+	max-width: 90%;
 	margin:50px auto;
 }
 .timeline{
@@ -562,6 +562,11 @@ $red: #9C6615;
 	list-style:none;
 	padding-top: 20px;
 	padding-bottom: 20px;
+  padding-left: 0;
+
+  .portfolio__description {
+    padding: 1em;
+  }
 }
 /* the timeline's center vertical line */
 .timeline:before{
@@ -576,10 +581,9 @@ $red: #9C6615;
 .timeline li{
 	border-top:1px solid #ccc;
 	position:relative;
-	width:50%;
+	width: calc(100% / 2) ;
 	min-height:100px;
 	margin-bottom:20px;
-	padding: 20px 40px;
 	text-align: right;
 	transition:.3s;
 	opacity:0;

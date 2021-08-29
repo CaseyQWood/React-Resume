@@ -38,32 +38,41 @@ export default function Portfolio() {
     }
   }
 
+  const portfolioScripts = [
+    {
+      name: 'BucketUp',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      name: 'Scheduler',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      name: 'Smart To-Do',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      name: 'Three.js Journey',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    }
+  ]
 
 
   return (
 
     <div id='portfolio__page' class="container">
       <ul class="timeline">
-        <li>
-          <h3>2001</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </li>
-        <li>
-          <h3>2002</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </li>
-        <li>
-          <h3>2003</h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </li>
-        <li>
-          <h3>2004</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </li>
-        <li>
-          <h3>2005</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </li>
+        {
+          portfolioScripts.map((data, index) => 
+            <li>
+              <div className='portfolio__description'>
+                <h3>{data.name}</h3>
+                <p>{data.description}</p>
+              </div>
+            </li>
+          )
+        }
+        
       </ul>
     </div>
 
