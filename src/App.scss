@@ -572,6 +572,13 @@ $red: #9C6615;
   .porfolio__info {
     padding: 1em
   }
+
+  .portolio__img {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
 }
 /* the timeline's center vertical line */
 .timeline:before{
@@ -584,6 +591,8 @@ $red: #9C6615;
 	background-color: #9C6615;
 }
 .timeline li{
+  display: flex;
+  justify-content: space-between;
 	
 	position:relative;
 	min-height:100px;

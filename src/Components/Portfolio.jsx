@@ -1,22 +1,9 @@
 import React, { componentDidMount, useEffect } from 'react' 
-import Card from './primitveComponents/Card'
-
 
 import bucketUp from '../images/portfolio-img/login-facemesh.gif'
 import scheduler from '../images/portfolio-img/schedulerPrev.png'
 
 export default function Portfolio() {
-  const portfolioData = [
-    {
-      image: bucketUp,
-      name: 'BucketUp'
-    },
-    {
-      image: scheduler,
-      name: 'Scheduler'
-    }
-
-  ]
 
   document.addEventListener('scroll', timeline);
 
@@ -27,7 +14,6 @@ export default function Portfolio() {
     var timeline_events = document.querySelectorAll('.timeline li');
 
     for(const i in timeline_events){
-      
       if(timeline_events[i].offsetTop < threshold_position){
         timeline_events[i].classList.add('visible');
       } else {
@@ -42,7 +28,7 @@ export default function Portfolio() {
     {
       name: 'BucketUp',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: bucketUp,
+      image: bucketUp
     },
     {
       name: 'Scheduler',
@@ -52,12 +38,12 @@ export default function Portfolio() {
     {
       name: 'Smart To-Do',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      mage: bucketUp,
+      image: bucketUp
     },
     {
       name: 'Three.js Journey',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      mage: bucketUp,
+      image: bucketUp
     }
   ]
 
@@ -65,10 +51,10 @@ export default function Portfolio() {
   return (
 
     <div id='portfolio__page' class="container">
-      <ul class="timeline">
+      <ul className="timeline">
         {
           portfolioScripts.map((data, index) => 
-            <li>
+            <li key={index}>
               <div className='portfolio__description'>
                 <div className='porfolio__info'>
                   <h3>{data.name}</h3>
@@ -76,8 +62,8 @@ export default function Portfolio() {
                 </div>
               </div>
 
-              <div>
-                <img className='portolio__img' src={data.img} alt='language Icon'></img>
+              <div className='portolio__img'>
+                <img src={data.image} alt='language Icon'></img>
               </div>
             
             </li>
