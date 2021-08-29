@@ -41,19 +41,23 @@ export default function Portfolio() {
   const portfolioScripts = [
     {
       name: 'BucketUp',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: bucketUp,
     },
     {
       name: 'Scheduler',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      image: scheduler
     },
     {
       name: 'Smart To-Do',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      mage: bucketUp,
     },
     {
       name: 'Three.js Journey',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      mage: bucketUp,
     }
   ]
 
@@ -66,9 +70,16 @@ export default function Portfolio() {
           portfolioScripts.map((data, index) => 
             <li>
               <div className='portfolio__description'>
-                <h3>{data.name}</h3>
-                <p>{data.description}</p>
+                <div className='porfolio__info'>
+                  <h3>{data.name}</h3>
+                  <p>{data.description}</p>
+                </div>
               </div>
+
+              <div>
+                <img className='portolio__img' src={data.img} alt='language Icon'></img>
+              </div>
+            
             </li>
           )
         }

@@ -565,7 +565,12 @@ $red: #9C6615;
   padding-left: 0;
 
   .portfolio__description {
-    padding: 1em;
+    border-top:1px solid #9C6615;
+    width: calc(100% / 2) ;
+  }
+
+  .porfolio__info {
+    padding: 1em
   }
 }
 /* the timeline's center vertical line */
@@ -576,12 +581,11 @@ $red: #9C6615;
 	bottom:0;
 	left:50%;
 	width: 1px;
-	background-color: #ccc;
+	background-color: #9C6615;
 }
 .timeline li{
-	border-top:1px solid #ccc;
+	
 	position:relative;
-	width: calc(100% / 2) ;
 	min-height:100px;
 	margin-bottom:20px;
 	text-align: right;
@@ -590,14 +594,14 @@ $red: #9C6615;
 	transform: translateX(-10%);
 }
 /* the rounded mark on each timeline item */
-.timeline li:before {
+.timeline .portfolio__description:before {
 	content:"";
 	width: 10px;
 	height: 10px;
 	position: absolute;
 	top: 0;
-	right: 0;
-	background: #ccc;
+	right: 50%;
+	background: #9C6615;
 	border-radius:50%;
 	box-sizing:border-box;
 	transform: translate(50%,-50%);
@@ -611,7 +615,8 @@ $red: #9C6615;
   line-height: 28px;
 }
 .timeline li:nth-child(2n) {
-	align-self: flex-end;
+  display: flex;
+	flex-direction: row-reverse;
 	text-align: left;
 	transform: translateX(10%);
 }
