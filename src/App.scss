@@ -436,9 +436,9 @@ $red: #9C6615;
   z-index: 1000;
   font-size: 25px;
   svg {
-    fill: white !important;
+    fill: #D3D0CB !important;
     path {
-      fill: white !important;
+      fill: #D3D0CB !important;
     }
   }
 }
@@ -447,11 +447,23 @@ $red: #9C6615;
   .icon__lan {
     font-size: 40px;
   }
+
+
+  &:hover{
+    svg {
+      fill: #9C6615;
+  
+      path{
+        color: #9C6615;
+      }
+    }
+
+  }
   svg {
-    fill: white;
+    fill: #D3D0CB;
 
     path{
-      color: white;
+      color: #D3D0CB;
     }
   }
 }
