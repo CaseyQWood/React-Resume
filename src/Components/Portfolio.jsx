@@ -11,7 +11,7 @@ export default function Portfolio() {
 
     var threshold_position = (window.scrollY + window.innerHeight * 2/3) - window.innerHeight * 2;
     //compare scrolltop with scrolltop on each timeline event
-    var timeline_events = document.querySelectorAll('.timeline li');
+    var timeline_events = document.querySelectorAll('.timeline li:not(.stack)');
 
     for(const i in timeline_events){
       if(timeline_events[i].offsetTop < threshold_position){
@@ -28,21 +28,25 @@ export default function Portfolio() {
     {
       name: 'BucketUp',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      stack: ['React', 'threeJS', 'JavaScript', 'nodeJS'],
       image: bucketUp
     },
     {
       name: 'Scheduler',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      stack: ['React', 'threeJS', 'JavaScript', 'nodeJS'],
       image: scheduler
     },
     {
       name: 'Smart To-Do',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      stack: ['React', 'threeJS', 'JavaScript', 'nodeJS'],
       image: bucketUp
     },
     {
       name: 'Three.js Journey',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      stack: ['React', 'threeJS', 'JavaScript', 'nodeJS'],
       image: bucketUp
     }
   ]
@@ -59,6 +63,9 @@ export default function Portfolio() {
                 <div className='porfolio__info'>
                   <h3>{data.name}</h3>
                   <p>{data.description}</p>
+                    <ul>
+                      {data.stack.map((tech, index) => <li className="stack" key={index}>{tech}</li>)}
+                    </ul>
                 </div>
               </div>
 

@@ -336,19 +336,19 @@ $red: #9C6615;
     font-size: 2.5em;
     font-weight: 400;
     font-family: 'Fira Sans';
-
     border-bottom: #9C6615 3px solid;
+
   }
 
   .about__profile-img {
-    text-align: center;
-    margin: auto;
+  margin-top: 2em;
+  
     
     img{
       width: 100%;
-      height: 50vh;
-      border-radius: 50%;
-      
+      height: 35vh;
+    
+      border: #9C6615 2px solid;
     }
   }
 
@@ -359,13 +359,15 @@ $red: #9C6615;
   margin: 0 5%;
   border-right: #9C6615 3px solid;
   font-family: 'Fira Sans';
+  justify-content: space-between;
 }
 
 .about__description {
   color: #D3D0CB;
-  margin: auto;
+  margin: auto 0;
   text-align: center;
-  width: 60%;
+  width: 75%;
+  padding-right: 3em;
 
   p {
     font-size: 20px;
@@ -577,6 +579,7 @@ $red: #9C6615;
     width: 40%;
     img {
       width: 100%;
+      box-shadow: 5px 5px 10px lightgray;
     }
   }
 }
@@ -590,7 +593,7 @@ $red: #9C6615;
 	width: 1px;
 	background-color: #9C6615;
 }
-.timeline li{
+.timeline li:not(.stack){
   display: flex;
   justify-content: space-between;
 	
@@ -623,17 +626,17 @@ $red: #9C6615;
   font-size: 20px;
   line-height: 28px;
 }
-.timeline li:nth-child(2n) {
+.timeline li:not(.stack):nth-child(2n) {
   display: flex;
 	flex-direction: row-reverse;
 	text-align: left;
 	transform: translateX(10%);
 }
-.timeline li:nth-child(2n):before {
+.timeline li:not(.stack):nth-child(2n):before {
 	left: 0;
   transform: translate(-50%,-50%);
 }
-.timeline li.visible {
+.timeline li:not(.stack).visible {
 	opacity:1;
 	transform:translateX(0);
 }
