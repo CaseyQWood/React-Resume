@@ -19,7 +19,7 @@ export default function Portfolio() {
 
   return (
     <div id='portfolio__page' className='portfolio__container'>
-      {portfolioData.map((data, index) => <Card key={index} icon={data.image} name={data.name}/>)}
+      {portfolioData.map((data, index) => <Card key={index} img={data.image} name={data.name}/>)}
       
       {/* <Card/>
       <Card/>

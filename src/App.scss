@@ -51,9 +51,6 @@ body {
 */
 $red: #9C6615;
 
-
-
-
 .hero__container {
   height: 100vh;
   background: url('./image-from-rawpixel-id-2252698-jpeg.jpg');
@@ -229,6 +226,45 @@ $red: #9C6615;
 }
 
 
+// next page arrow animation
+.box {
+  position: absolute;
+  left: 50%;
+  margin-top: 5em;
+}
+
+.box span {
+  
+	width: 20px;
+	height: 20px;
+  display: block;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+	animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+	animation-delay: -0.4s;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		transform: rotate(45deg) translate(10px, 10px);
+	}
+	100% {
+		opacity: 0;
+	}
+}
 
 
 /*
@@ -508,12 +544,6 @@ $red: #9C6615;
     width: calc(100% / 2 );
     margin:  5em;
     text-align: center;
-    
-  }
-
-  .card__contianer:nth-child(2n) {
-    margin: 15em 5em 5em 5em;
-    width: calc(100% / 2 );
   }
 
   .card__icon {
