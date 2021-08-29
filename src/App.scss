@@ -289,7 +289,7 @@ $red: #9C6615;
 }
 
 .about__container {
-  height: 70vh;
+  height: calc(70vh - 32px);
   background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
 
   h2 {
@@ -404,24 +404,6 @@ $red: #9C6615;
 /*
 ..Carousel
 */
-
-// .c-slick {
-//   font-size: 0;
-//     line-height: 0;
-//     position: absolute;
-//     top: 50%;
-//     display: block;
-//     width: 20px;
-//     height: 20px;
-//     padding: 0;
-//     transform: translate(0, -50%);
-//     cursor: pointer;
-//     color: transparent;
-//     border: none;
-//     outline: none;
-//     background: transparent;
-// }
-
 .c-slick__prev {
   left: 20px !important;
 }
@@ -469,7 +451,7 @@ $red: #9C6615;
 }
 
 .slider__container {
-  height: 30vh;
+  height: calc(30vh - 32px);
   background-color: #242526;
   display: flex;
   flex-direction: column;

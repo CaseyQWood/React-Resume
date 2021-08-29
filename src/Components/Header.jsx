@@ -16,15 +16,25 @@ export default function Header() {
      document.getElementById("contact__page").scrollIntoView({behavior: 'smooth'});
   }
 
- 
+  function _scrollTo(selector, yOffset = -77){
+    const el = document.querySelector(selector);
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  
+    window.scrollTo({top: y, behavior: 'smooth'});
+  }
 
   return (
     <ul className={className}>
-      <li onClick={() => document.getElementById("home__page").scrollIntoView({behavior: 'smooth'})}>Home</li>
-      <li onClick={() => document.getElementById("about__page").scrollIntoView({behavior: 'smooth'})}>About</li>
-      <li onClick={() => document.getElementById("expierence__page").scrollIntoView({behavior: 'smooth'})}>Experience</li>
-      <li onClick={() => document.getElementById("portfolio__page").scrollIntoView({behavior: 'smooth'})}>Portfolio</li>
-      <li onClick={() => document.getElementById("contact__page").scrollIntoView({behavior: 'smooth'})} >Contact</li>
+      {/* <li onClick={() => document.getElementById("home__page").scrollIntoView({behavior: 'smooth', block: 'start'})}>Home</li>
+      <li onClick={() => document.getElementById("about__page").scrollIntoView({behavior: 'smooth', block: 'start'})}>About</li>
+      <li onClick={() => document.getElementById("expierence__page").scrollIntoView({behavior: 'smooth', block: 'start'})}>Experience</li>
+      <li onClick={() => document.getElementById("portfolio__page").scrollIntoView({behavior: 'smooth', block: 'start'})}>Portfolio</li>
+      <li onClick={() => document.getElementById("contact__page").scrollIntoView({behavior: 'smooth', block: 'start'})} >Contact</li> */}
+      <li onClick={() => _scrollTo("#home__page", 0)}>Home</li>
+      <li onClick={() => _scrollTo("#about__page")}>About</li>
+      <li onClick={() => _scrollTo("#expierence__page")}>Experience</li>
+      <li onClick={() => _scrollTo("#portfolio__page")}>Portfolio</li>
+      <li onClick={() => _scrollTo("#contact__page")} >Contact</li>
     </ul>
   )
 }
