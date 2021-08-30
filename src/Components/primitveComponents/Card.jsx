@@ -5,7 +5,8 @@ export default function Card(props) {
   return (
     <div className='card__contianer'>
 
-      {props.img ? 
+      {
+        props.img ? 
         <img className='card__icon' src={props.img} alt='language Icon'></img> :
         <div class="icon__lan">{props.icon}</div>
       }

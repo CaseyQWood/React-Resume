@@ -742,10 +742,18 @@ experience page
 
   .middle {
     width: 50%;
+    padding: 1em;
   }
 
   .box {
     margin-top: 30vh;
+  }
+
+  .box:hover {
+    span {
+    border-left: 2px solid #9C6615;
+    border-top: 2px solid #9C6615;
+    }
   }
 
   .box span{

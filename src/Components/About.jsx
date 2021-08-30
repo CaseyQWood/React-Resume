@@ -23,15 +23,15 @@ export default function About() {
         <h3>Contact Info</h3>
         <div class= "about__contact">
           <ul>
-            <li><a href="mailto:name@email.com">name@email.com</a></li>
+            <li><a href="mailto:name@email.com">caseywood252@gmail.com</a></li>
             <li>Vancouver, Bc</li>
           </ul>
 
           <div class="middle">
-            <a class="social-button" href="#">
+            <a class="social-button" href="https://github.com/CaseyQWood">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a class="social-button" href="#">
+            <a class="social-button" href="https://www.linkedin.com/in/casey-wood-5a2532176/">
             <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>

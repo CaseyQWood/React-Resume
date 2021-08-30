@@ -6,26 +6,26 @@ import scheduler from '../images/portfolio-img/schedulerPrev.png'
 const portfolioScripts = [
   {
     name: 'BucketUp',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: ['React', 'threeJS', 'JavaScript', 'nodeJS'],
+    description: 'Stylized budgeting app allowing users to create, manage and share their personal budgets created using the app.',
+    stack: ['React', 'threeJS', 'JavaScript', 'PSQL', 'Express', 'CannonJS', 'Material UI', 'SCSS', 'React Charts'],
     image: bucketUp
   },
   {
     name: 'Scheduler',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: ['React', 'threeJS', 'JavaScript', 'nodeJS'],
+    description: 'Scheduler app that allows the users to choose any day from Monday to Friday and book an appointment with a available interviewer for that day. Includes testing suites',
+    stack: ['React', 'JavaScript', 'Express', 'HTML/CSS', 'Cypress', 'jest'],
     image: scheduler
   },
   {
     name: 'Smart To-Do',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: ['React', 'threeJS', 'JavaScript', 'nodeJS'],
+    description: 'A smart categorizing to-do list where users input activities that get sorted into correct sections using redementary machine learning to update logic for correct catigorization.',
+    stack: ['Jquery', 'JavaScript', 'Sass', 'Express'],
     image: bucketUp
   },
   {
     name: 'Three.js Journey',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: ['React', 'threeJS', 'JavaScript', 'nodeJS'],
+    stack: ['JavaScript', 'threeJS', 'CannonJS', 'WebGL', 'TypeScript', 'HTML/CSS'],
     image: bucketUp
   }
 ]
