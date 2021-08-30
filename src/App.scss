@@ -541,11 +541,15 @@ $red: #9C6615;
   height: 100vh;
   background-color: #D3D0CB;
   display: flex;
+  
 
   .card__contianer {
     width: calc(100% / 2 );
     margin:  5em;
     text-align: center;
+    font-family: 'Fira Sans';
+    
+
   }
 
   .card__icon {
@@ -556,6 +560,7 @@ $red: #9C6615;
 .container {
 	max-width: 90%;
 	margin:50px auto;
+  font-family: 'Fira Sans';
 }
 .timeline{
 	position:relative;
@@ -569,17 +574,22 @@ $red: #9C6615;
   .portfolio__description {
     border-top:1px solid #9C6615;
     width: calc(100% / 2) ;
+    font-family: 'Fira Sans';
   }
 
   .porfolio__info {
-    padding: 1em
+    padding: 1em;
+
+    .stack {
+      list-style: none;
+    }
   }
 
   .portolio__img {
     width: 40%;
     img {
       width: 100%;
-      box-shadow: 5px 5px 10px lightgray;
+      box-shadow: 5px 5px 10px rgba(211, 211, 211, 0.596);
     }
   }
 }
@@ -639,4 +649,46 @@ $red: #9C6615;
 .timeline li:not(.stack).visible {
 	opacity:1;
 	transform:translateX(0);
+}
+
+/*
+experience page 
+*/
+
+.experience__container {
+  background-color: rgba(22,38,46,1);
+  color: #D3D0CB;
+  font-family: 'Fira Sans';
+  padding: 3em;
+
+  ul {
+    border-top: #9C6615 3px solid;
+    border-left: #9C6615 3px solid;
+  }
+
+  .item__sub{
+    display: flex;
+    flex-direction: row;
+     
+    h3 {
+      padding-left: 1em;
+    }
+    h4 {
+      padding-left: 1em;
+    }
+  }
+
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+  
 }

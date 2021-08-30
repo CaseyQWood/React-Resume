@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import About from './Components/About';
 import Carousel from './Components/primitveComponents/Carousel';
 import Portfolio from './Components/Portfolio';
+import Experience from './Components/Experience';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <About/>
       <Carousel/>
       <Portfolio/>
+      <Experience/>
     </div>
   );
 }
