@@ -1,6 +1,16 @@
 import React from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCubes } from '@fortawesome/free-solid-svg-icons'
+
+
 const history = [
+  {
+    name: 'Student',
+    where: 'Lighthouse Labs',
+    date: '2021',
+    description: 'Intensive 12, week diploma covering languages/skills such as JavaScript, Node.js, React, Jquery, Database & Data modeling, HTML, SASS, PostgreSQL and Ruby on Rails'
+  },
   {
     name: 'Knowledge Expert',
     where: 'Shaw Cable',
@@ -13,10 +23,10 @@ const history = [
     date: '2009 - 2016',
     description: 'Dancing Dragons was my first startup, it was a multi-service corporation that focused on the distribution and creation of performance equipment. Other services offered were studio space for artists, networking, skillshare, and assistance with contracts for shows and events'
   }
+  
 ]
 
 export default function Experience(props) {
-
   const [isVisible, setVisible] = React.useState(true);
   const domRef = React.useRef();
   React.useEffect(() => {
@@ -32,19 +42,25 @@ export default function Experience(props) {
   return (
     <div id='expierence__page' className='experience__container'>
       <h1>Experience</h1>
-      <ul className='experience__list'  className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-          ref={domRef}>
-        {history.map((data, index) => 
-          <li className='expierence__item' key={index}>
-            <h2>{data.where}</h2>
-            <div className='item__sub' >
-              <h3>{data.name}</h3>
-              <h4>{data.date}</h4>
-            </div>
-            <p>{data.description}</p>
-          </li>  
-        )}
-      </ul>
+
+      <div className={`fade-in-section ${isVisible ? 'experience__wrapper is-visible' : 'experience__wrapper'}`}
+            ref={domRef}>
+        <ul className='experience__list'  >
+          {history.map((data, index) => 
+            <li className='expierence__item' key={index}>
+              <h2>{data.where}</h2>
+              <div className='item__sub' >
+                <h3>{data.name}</h3>
+                <h4>{data.date}</h4>
+              </div>
+              <p>{data.description}</p>
+            </li>  
+          )}
+        </ul>
+        <div className='experience__icon'>
+          <FontAwesomeIcon icon={faCubes} />
+        </div>
+      </div>
     </div>
   )
 }

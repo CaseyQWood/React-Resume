@@ -49,7 +49,7 @@ body {
 /*
 ..Hero page stylings
 */
-$red: #9C6615;
+$orange: #9C6615;
 
 .hero__container {
   height: 100vh;
@@ -157,7 +157,7 @@ $red: #9C6615;
     
   line {
     stroke-width: 12px;
-    stroke: $red;
+    stroke: $orange;
   }
   
   // change the 1 to how ever many iterations you want or infinate for a loop
@@ -243,6 +243,13 @@ $red: #9C6615;
 	transform: rotate(45deg);
 	margin: -10px;
 	animation: animate 2s infinite;
+}
+
+.box:hover {
+  span {
+  border-right: 2px solid #9C6615;
+	border-bottom: 2px solid #9C6615;
+  }
 }
 
 .box span:nth-child(2) {
@@ -657,14 +664,11 @@ experience page
 
 .experience__container {
   background-color: rgba(22,38,46,1);
+  // background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
+
   color: #D3D0CB;
   font-family: 'Fira Sans';
   padding: 3em;
-
-  ul {
-    border-top: #9C6615 3px solid;
-    border-left: #9C6615 3px solid;
-  }
 
   .item__sub{
     display: flex;
@@ -690,5 +694,52 @@ experience page
     transform: none;
     visibility: visible;
   }
+  .experience__wrapper {
+    display: flex;
+    flex-direction: row;
+    border-top: #9C6615 3px solid;
+    border-left: #9C6615 3px solid;
+  }
+
+  .experience__list {
+    width: 50%;
+  }
+
+  .experience__icon {
+    width: 30%;
+    padding: 5%;
+    margin: auto;
+    svg {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+      
+      path { 
+        fill: #9C6615;
+        
+      }
+    }
+  }
   
+}
+
+/*
+ footer page
+*/
+
+.footer__container {
+  background-color: rgba(36,37,38,1);
+  display: flex;
+  font-family: 'Fira Sans';
+  color: #D3D0CB;
+
+  .footer__quote{
+    width: 100%;
+    padding: 1em;
+  }
+
+  .middle {
+    width: 50%;
+  }
 }
