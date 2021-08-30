@@ -733,6 +733,7 @@ experience page
   display: flex;
   font-family: 'Fira Sans';
   color: #D3D0CB;
+  height: 40vh;
 
   .footer__quote{
     width: 100%;
@@ -741,5 +742,17 @@ experience page
 
   .middle {
     width: 50%;
+  }
+
+  .box {
+    margin-top: 30vh;
+  }
+
+  .box span{
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    border-right: none;
+    border-bottom: none;
+
   }
 }
