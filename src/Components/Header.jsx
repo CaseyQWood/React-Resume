@@ -17,7 +17,6 @@ export default function Header() {
       <li onClick={() => _scrollTo("#about__page")}>About</li>
       <li onClick={() => _scrollTo("#portfolio__page")}>Portfolio</li>
       <li onClick={() => _scrollTo("#expierence__page")}>Experience</li>
-      <li onClick={() => _scrollTo("#contact__page")} >Contact</li>
     </ul>
   )
 }
