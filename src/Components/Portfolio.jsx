@@ -1,33 +1,45 @@
 import React, { componentDidMount, useEffect } from 'react' 
-import Card from './primitveComponents/Card'
-
 
 import bucketUp from '../images/portfolio-img/login-facemesh.gif'
 import scheduler from '../images/portfolio-img/schedulerPrev.png'
 
-export default function Portfolio() {
-  const portfolioData = [
-    {
-      image: bucketUp,
-      name: 'BucketUp'
-    },
-    {
-      image: scheduler,
-      name: 'Scheduler'
-    }
+const portfolioScripts = [
+  {
+    name: 'BucketUp',
+    description: 'Stylized budgeting app allowing users to create, manage and share their personal budgets created using the app.',
+    stack: ['React', 'threeJS', 'JavaScript', 'PSQL', 'Express', 'CannonJS', 'Material UI', 'SCSS', 'React Charts'],
+    image: bucketUp
+  },
+  {
+    name: 'Scheduler',
+    description: 'Scheduler app that allows the users to choose any day from Monday to Friday and book an appointment with a available interviewer for that day. Includes testing suites',
+    stack: ['React', 'JavaScript', 'Express', 'HTML/CSS', 'Cypress', 'jest'],
+    image: scheduler
+  },
+  {
+    name: 'Smart To-Do',
+    description: 'A smart categorizing to-do list where users input activities that get sorted into correct sections using redementary machine learning to update logic for correct catigorization.',
+    stack: ['Jquery', 'JavaScript', 'Sass', 'Express'],
+    image: bucketUp
+  },
+  {
+    name: 'Three.js Journey',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    stack: ['JavaScript', 'threeJS', 'CannonJS', 'WebGL', 'TypeScript', 'HTML/CSS'],
+    image: bucketUp
+  }
+]
 
-  ]
+export default function Portfolio() {
 
   document.addEventListener('scroll', timeline);
 
-  function timeline(){
-
-    var threshold_position = (window.scrollY + window.innerHeight * 2/3) - window.innerHeight * 2;
+  function timeline() {
+    const threshold_position = (window.scrollY + window.innerHeight * 2/3) - window.innerHeight * 2;
     //compare scrolltop with scrolltop on each timeline event
-    var timeline_events = document.querySelectorAll('.timeline li');
+    const timeline_events = document.querySelectorAll('.timeline li:not(.stack)');
 
     for(const i in timeline_events){
-      
       if(timeline_events[i].offsetTop < threshold_position){
         timeline_events[i].classList.add('visible');
       } else {
@@ -38,32 +50,32 @@ export default function Portfolio() {
     }
   }
 
-
-
   return (
 
     <div id='portfolio__page' class="container">
-      <ul class="timeline">
-        <li>
-          <h3>2001</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </li>
-        <li>
-          <h3>2002</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </li>
-        <li>
-          <h3>2003</h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </li>
-        <li>
-          <h3>2004</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </li>
-        <li>
-          <h3>2005</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </li>
+      <h1>Portfolio</h1>
+      <ul className="timeline">
+        {
+          portfolioScripts.map((data, index) => 
+            <li key={index}>
+              <div className='portfolio__description'>
+                <div className='porfolio__info'>
+                  <h3>{data.name}</h3>
+                  <p>{data.description}</p>
+                    <ul>
+                      {data.stack.map((tech, index) => <li className="stack" key={index}>{tech}</li>)}
+                    </ul>
+                </div>
+              </div>
+
+              <div className='portolio__img'>
+                <img src={data.image} alt='language Icon'></img>
+              </div>
+            
+            </li>
+          )
+        }
+        
       </ul>
     </div>
 
