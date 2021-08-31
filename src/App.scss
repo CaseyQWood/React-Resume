@@ -544,25 +544,6 @@ $orange: #9C6615;
 ..portfolio page stylings
 */
 
-#cf {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-}
-
-#cf img {
-  position:absolute;
-  left:0;
-  -webkit-transition:opacity 1s ease-in-out;
-  -moz-transition:opacity 1s ease-in-out;
-  -o-transition:opacity 1s ease-in-out;
-  transition:opacity 1s ease-in-out;
- }
-
-#cf img.top:hover {
-  opacity:0;
-}
 
 .portfolio__container {
   height: 100vh;
@@ -626,6 +607,7 @@ $orange: #9C6615;
       -moz-transition:opacity 1s ease-in-out;
       -o-transition:opacity 1s ease-in-out;
       transition:opacity 1s ease-in-out;
+      height: 100%;
       width: 100%;
       box-shadow: 5px 5px 10px rgba(211, 211, 211, 0.596);
 

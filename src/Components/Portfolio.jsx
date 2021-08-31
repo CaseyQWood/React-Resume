@@ -2,7 +2,7 @@ import React, { componentDidMount, useEffect } from 'react'
 
 import bucketUp from '../images/portfolio-img/login-facemesh.gif'
 import bucketUpBudget from '../images/portfolio-img/bucket-animation-budget.gif'
-import scheduler from '../images/portfolio-img/schedulerprev.png'
+import scheduler from '../images/portfolio-img/schedulerPrev.png'
 import scheduler2 from '../images/portfolio-img/create_appointment_true.jpg'
 import galaxy from '../images/portfolio-img/galaxy-three.gif'
 import helmet from '../images/portfolio-img/flight-helmet-three.gif'
