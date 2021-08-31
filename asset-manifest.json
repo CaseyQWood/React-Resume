@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React-Resume/static/css/main.eec02bcc.chunk.css",
-    "main.js": "/React-Resume/static/js/main.b4fa60dc.chunk.js",
-    "main.js.map": "/React-Resume/static/js/main.b4fa60dc.chunk.js.map",
+    "main.css": "/React-Resume/static/css/main.6bc372e1.chunk.css",
+    "main.js": "/React-Resume/static/js/main.4c401ac2.chunk.js",
+    "main.js.map": "/React-Resume/static/js/main.4c401ac2.chunk.js.map",
     "runtime-main.js": "/React-Resume/static/js/runtime-main.0ba79f1e.js",
     "runtime-main.js.map": "/React-Resume/static/js/runtime-main.0ba79f1e.js.map",
     "static/css/2.07429646.chunk.css": "/React-Resume/static/css/2.07429646.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.deb38973.chunk.js.map": "/React-Resume/static/js/2.deb38973.chunk.js.map",
     "index.html": "/React-Resume/index.html",
     "static/css/2.07429646.chunk.css.map": "/React-Resume/static/css/2.07429646.chunk.css.map",
-    "static/css/main.eec02bcc.chunk.css.map": "/React-Resume/static/css/main.eec02bcc.chunk.css.map",
+    "static/css/main.6bc372e1.chunk.css.map": "/React-Resume/static/css/main.6bc372e1.chunk.css.map",
     "static/js/2.deb38973.chunk.js.LICENSE.txt": "/React-Resume/static/js/2.deb38973.chunk.js.LICENSE.txt",
     "static/media/black-white-profile.d3146a34.jpg": "/React-Resume/static/media/black-white-profile.d3146a34.jpg",
     "static/media/bucket-animation-budget.7786485c.gif": "/React-Resume/static/media/bucket-animation-budget.7786485c.gif",
@@ -19,14 +19,14 @@
     "static/media/galaxy-three.813ef5d6.gif": "/React-Resume/static/media/galaxy-three.813ef5d6.gif",
     "static/media/App.scss": "/React-Resume/static/media/image-from-rawpixel-id-2252698-jpeg.930bcbf6.jpg",
     "static/media/login-facemesh.5caeb2d1.gif": "/React-Resume/static/media/login-facemesh.5caeb2d1.gif",
-    "static/media/schedulerprev.08b7d473.png": "/React-Resume/static/media/schedulerprev.08b7d473.png",
+    "static/media/schedulerPrev.08b7d473.png": "/React-Resume/static/media/schedulerPrev.08b7d473.png",
     "static/media/slick-theme.css": "/React-Resume/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.0ba79f1e.js",
     "static/css/2.07429646.chunk.css",
     "static/js/2.deb38973.chunk.js",
-    "static/css/main.eec02bcc.chunk.css",
-    "static/js/main.b4fa60dc.chunk.js"
+    "static/css/main.6bc372e1.chunk.css",
+    "static/js/main.4c401ac2.chunk.js"
   ]
 }
