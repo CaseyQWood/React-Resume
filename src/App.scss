@@ -541,8 +541,28 @@ $orange: #9C6615;
 }
 
 /*
-..porfolio page stylings
+..portfolio page stylings
 */
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition:opacity 1s ease-in-out;
+  -moz-transition:opacity 1s ease-in-out;
+  -o-transition:opacity 1s ease-in-out;
+  transition:opacity 1s ease-in-out;
+ }
+
+#cf img.top:hover {
+  opacity:0;
+}
 
 .portfolio__container {
   height: 100vh;
@@ -587,6 +607,10 @@ $orange: #9C6615;
   .porfolio__info {
     padding: 1em;
 
+    ul {
+      padding: 0 1em;
+    }
+
     .stack {
       list-style: none;
     }
@@ -594,10 +618,26 @@ $orange: #9C6615;
 
   .portolio__img {
     width: 40%;
+    position:relative;
     img {
+      position:absolute;
+      left:0;
+      -webkit-transition:opacity 1s ease-in-out;
+      -moz-transition:opacity 1s ease-in-out;
+      -o-transition:opacity 1s ease-in-out;
+      transition:opacity 1s ease-in-out;
       width: 100%;
       box-shadow: 5px 5px 10px rgba(211, 211, 211, 0.596);
+
+      .top:hover {
+        opacity:0;
+      }
     }
+
+  }
+
+  .portolio__img img.top:hover {
+    opacity:0;
   }
 }
 /* the timeline's center vertical line */
@@ -657,6 +697,8 @@ $orange: #9C6615;
 	opacity:1;
 	transform:translateX(0);
 }
+
+
 
 /*
 experience page 

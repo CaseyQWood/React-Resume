@@ -1,33 +1,38 @@
 import React, { componentDidMount, useEffect } from 'react' 
 
 import bucketUp from '../images/portfolio-img/login-facemesh.gif'
-import scheduler from '../images/portfolio-img/schedulerPrev.png'
+import bucketUpBudget from '../images/portfolio-img/bucket-animation-budget.gif'
+import scheduler from '../images/portfolio-img/schedulerprev.png'
+import scheduler2 from '../images/portfolio-img/create_appointment_true.jpg'
+import galaxy from '../images/portfolio-img/galaxy-three.gif'
+import helmet from '../images/portfolio-img/flight-helmet-three.gif'
 
 const portfolioScripts = [
   {
     name: 'BucketUp',
     description: 'Stylized budgeting app allowing users to create, manage and share their personal budgets created using the app.',
     stack: ['React', 'threeJS', 'JavaScript', 'PSQL', 'Express', 'CannonJS', 'Material UI', 'SCSS', 'React Charts'],
-    image: bucketUp
+    image: [bucketUp, bucketUpBudget]
   },
   {
     name: 'Scheduler',
     description: 'Scheduler app that allows the users to choose any day from Monday to Friday and book an appointment with a available interviewer for that day. Includes testing suites',
     stack: ['React', 'JavaScript', 'Express', 'HTML/CSS', 'Cypress', 'jest'],
-    image: scheduler
-  },
-  {
-    name: 'Smart To-Do',
-    description: 'A smart categorizing to-do list where users input activities that get sorted into correct sections using redementary machine learning to update logic for correct catigorization.',
-    stack: ['Jquery', 'JavaScript', 'Sass', 'Express'],
-    image: bucketUp
+    image: [scheduler, scheduler2]
   },
   {
     name: 'Three.js Journey',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     stack: ['JavaScript', 'threeJS', 'CannonJS', 'WebGL', 'TypeScript', 'HTML/CSS'],
-    image: bucketUp
-  }
+    image: [galaxy, helmet]
+  },
+  // {
+  //   name: 'Smart To-Do',
+  //   description: 'A smart categorizing to-do list where users input activities that get sorted into correct sections using redementary machine learning to update logic for correct catigorization.',
+  //   stack: ['Jquery', 'JavaScript', 'Sass', 'Express'],
+  //   image: [bucketUp, scheduler2]
+  // }
+
 ]
 
 export default function Portfolio() {
@@ -69,7 +74,7 @@ export default function Portfolio() {
               </div>
 
               <div className='portolio__img'>
-                <img src={data.image} alt='language Icon'></img>
+                {data.image.map((img, index) => (index === 0 ? <img  key={index} src={img} alt='language Icon'></img> : <img className='top' key={index} src={img} alt='language Icon'></img>))}
               </div>
             
             </li>
