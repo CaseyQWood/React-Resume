@@ -38,7 +38,7 @@ export default function Hero() {
           </div>
         </div>
 
-      <h2>Addicted to learning and pushing to improve. I am some one who is always eager to pick up a new skill and always willing to adapt to challenges. In my spare time I typically spend my time tinkering on projects, playing warhammer or video games</h2>
+      <h2>Fresh out of Lighthouse Labs looking for great opportunities in the Vancouver area! Always very hungry to learn new tech and keep up with the bleeding edge. My drive comes heavily from my curiosity and love for a challenge.</h2>
       
       <div class="box" onClick={() => _scrollTo("#about__page")} >
         <span></span>
