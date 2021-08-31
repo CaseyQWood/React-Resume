@@ -470,6 +470,15 @@ $orange: #9C6615;
   }
 }
 
+.c-slick:hover {
+  svg {
+    fill: #9C6615 !important;
+    path {
+      fill: #9C6615 !important;
+    }
+  }
+}
+
 .card__contianer {
   .icon__lan {
     font-size: 40px;
