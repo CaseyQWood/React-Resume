@@ -53,7 +53,7 @@ $orange: #9C6615;
 
 .hero__container {
   height: 100vh;
-  background: url('./image-from-rawpixel-id-2252698-jpeg.jpg');
+  background: url('../src/images/image-from-rawpixel-id-2252698-jpeg.jpg');
   color: #D3D0CB;
 
   h1 {
@@ -607,9 +607,12 @@ $orange: #9C6615;
   }
 
   .portolio__img {
-    width: 40%;
+    width: 30%;
     position:relative;
+    margin: 0 auto;
     img {
+     
+
       position:absolute;
       left:0;
       -webkit-transition:opacity 1s ease-in-out;
@@ -698,7 +701,7 @@ experience page
 .experience__container {
   background-color: rgba(22,38,46,1);
   // background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
-
+  height: 75vh;
   color: #D3D0CB;
   font-family: 'Fira Sans';
   padding: 3em;
@@ -736,6 +739,7 @@ experience page
 
   .experience__list {
     width: 50%;
+    font-size: 1.25em;
   }
 
   .experience__icon {
@@ -766,7 +770,7 @@ experience page
   display: flex;
   font-family: 'Fira Sans';
   color: #D3D0CB;
-  height: 40vh;
+  height: 25vh;
 
   .footer__quote{
     width: 100%;
@@ -779,7 +783,6 @@ experience page
   }
 
   .box {
-    margin-top: 30vh;
   }
 
   .box:hover {
