@@ -768,6 +768,7 @@ experience page
 .footer__container {
   background-color: rgba(36,37,38,1);
   display: flex;
+  position: relative;
   font-family: 'Fira Sans';
   color: #D3D0CB;
   height: 25vh;
@@ -783,6 +784,8 @@ experience page
   }
 
   .box {
+    bottom: 0;
+    margin-bottom: 2em;
   }
 
   .box:hover {
