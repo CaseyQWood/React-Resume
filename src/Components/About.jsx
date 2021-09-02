@@ -23,7 +23,7 @@ export default function About() {
         <h3>Contact Info</h3>
         <div class= "about__contact">
           <ul>
-            <li><a href="mailto:name@email.com">caseywood252@gmail.com</a></li>
+            <li><a href="mailto:caseywood252@gmail.com">caseywood252@gmail.com</a></li>
             <li>Vancouver, Bc</li>
           </ul>
 
