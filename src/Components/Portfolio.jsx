@@ -6,6 +6,8 @@ import scheduler from '../images/portfolio-img/schedulerPrev.png'
 import scheduler2 from '../images/portfolio-img/create_appointment_true.jpg'
 import galaxy from '../images/portfolio-img/galaxy-three.gif'
 import helmet from '../images/portfolio-img/flight-helmet-three.gif'
+import toDoEdit from '../images/portfolio-img/edit_category.gif'
+import toDoCreate from '../images/portfolio-img/new_task.gif'
 
 const portfolioScripts = [
   {
@@ -26,12 +28,12 @@ const portfolioScripts = [
     stack: ['JavaScript', 'threeJS', 'CannonJS', 'WebGL', 'TypeScript', 'HTML/CSS'],
     image: [galaxy, helmet]
   },
-  // {
-  //   name: 'Smart To-Do',
-  //   description: 'A smart categorizing to-do list where users input activities that get sorted into correct sections using redementary machine learning to update logic for correct catigorization.',
-  //   stack: ['Jquery', 'JavaScript', 'Sass', 'Express'],
-  //   image: [bucketUp, scheduler2]
-  // }
+  {
+    name: 'Smart To-Do',
+    description: 'A smart categorizing to-do list where users input activities that get sorted into correct sections using redementary machine learning to update logic for correct catigorization.',
+    stack: ['Jquery', 'JavaScript', 'Sass', 'Express'],
+    image: [toDoCreate, toDoEdit]
+  }
 
 ]
 
