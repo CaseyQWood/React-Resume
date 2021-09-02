@@ -39,7 +39,7 @@ export default function Footer() {
         <a class="social-button" href="https://www.linkedin.com/in/casey-wood-5a2532176/">
         <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a class="social-button" href="#">
+        <a class="social-button" href="mailto:caseywood252@gmail.com">
         <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>
