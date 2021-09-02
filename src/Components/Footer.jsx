@@ -13,7 +13,7 @@ export default function Footer() {
     return (
       <>
         <h2>{quoteList[whichQuote].quote}</h2>
-        <h3>{quoteList[whichQuote].who}</h3>
+        <h3>-- {quoteList[whichQuote].who}</h3>
       </>
     )
   }

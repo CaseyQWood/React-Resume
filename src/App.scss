@@ -596,6 +596,12 @@ $orange: #9C6615;
 
     ul {
       padding: 0 1em;
+      display: inline-flex
+
+    }
+
+    li {
+      padding: 0 0.25em;
     }
 
     .stack {
@@ -772,6 +778,7 @@ experience page
   .footer__quote{
     width: 100%;
     padding: 2em;
+    font-style: italic;
   }
 
   .middle {

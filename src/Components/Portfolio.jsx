@@ -35,7 +35,7 @@ export default function Portfolio() {
                   <h3>{data.name}</h3>
                   <p>{data.description}</p>
                     <ul>
-                      {data.stack.map((tech, index) => <li className="stack" key={index}>{tech}</li>)}
+                      {data.stack.map((tech, index) => (index + 1) === data.stack.length ? <li className="stack" key={index}>{tech}</li> : <li className="stack" key={index}>{tech},</li>)}
                     </ul>
                 </div>
               </div>
