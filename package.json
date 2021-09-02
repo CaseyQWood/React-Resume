@@ -2,7 +2,7 @@
   "name": "react-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://CaseyQWood.github.io/React-Resume",
+  "homepage": "http://CaseyQWood.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
