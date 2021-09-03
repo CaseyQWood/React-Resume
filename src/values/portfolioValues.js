@@ -29,7 +29,7 @@ const portfolioScripts = [
   {
     name: 'Smart To-Do',
     description: 'A smart categorizing to-do list where users input activities that get sorted into correct sections using rudimentary machine learning to update logic for correct categorization.',
-    stack: ['Jquery', 'JavaScript', 'Sass', 'Express'],
+    stack: ['Jquery', 'JavaScript', 'jQuery', 'Sass', 'Express'],
     image: [toDoCreate, toDoEdit]
   }
 
