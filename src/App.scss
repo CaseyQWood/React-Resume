@@ -563,12 +563,12 @@ $orange: #9C6615;
     text-align: center;
     font-family: 'Fira Sans';
     
-
   }
 
   .card__icon {
     width: 100%;
   }
+
 }
 
 .container {
@@ -594,19 +594,25 @@ $orange: #9C6615;
   .porfolio__info {
     padding: 1em;
 
-    ul {
-      padding: 0 1em;
-      display: inline-flex
 
+
+    .portfolio__stack {
+      font-style: italic;
     }
 
-    li {
-      padding: 0 0.25em;
-    }
+    // ul {
+    //   padding: 0 1em;
+    //   display: inline-flex
 
-    .stack {
-      list-style: none;
-    }
+    // }
+
+    // li {
+    //   padding: 0 0.25em;
+    // }
+
+    // .stack {
+    //   list-style: none;
+    // }
   }
 
   .portolio__img {

@@ -34,9 +34,10 @@ export default function Portfolio() {
                 <div className='porfolio__info'>
                   <h3>{data.name}</h3>
                   <p>{data.description}</p>
-                    <ul>
+                  <p className='portfolio__stack'>{data.stack.map((tech, index) => (index + 1) === data.stack.length ? tech : tech + ', ')}</p>
+                    {/* <ul>
                       {data.stack.map((tech, index) => (index + 1) === data.stack.length ? <li className="stack" key={index}>{tech}</li> : <li className="stack" key={index}>{tech},</li>)}
-                    </ul>
+                    </ul> */}
                 </div>
               </div>
 
