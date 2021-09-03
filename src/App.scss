@@ -446,6 +446,18 @@ $orange: #9C6615;
 /*
 ..Carousel
 */
+
+@media (max-width: 1000px) {
+  .slider__container {
+    height: calc(30vh - 32px);
+  }
+}
+@media (min-width: 1001px) {
+  .slider__container {
+    height: calc(30vh - 32px);
+  }
+}
+
 .c-slick__prev {
   left: 20px !important;
 }
@@ -502,7 +514,7 @@ $orange: #9C6615;
 }
 
 .slider__container {
-  height: calc(30vh - 32px);
+  // height: calc(30vh - 32px);
   background-color: #242526;
   display: flex;
   flex-direction: column;
@@ -618,7 +630,7 @@ $orange: #9C6615;
   .portolio__img {
     width: 30%;
     position:relative;
-    margin: 0 auto;
+    margin: 1em auto;
     img {
      
 
@@ -688,6 +700,7 @@ $orange: #9C6615;
 }
 .timeline li:not(.stack):nth-child(2n) {
   display: flex;
+  width: 90%;
 	flex-direction: row-reverse;
 	text-align: left;
 	transform: translateX(10%);
@@ -699,6 +712,7 @@ $orange: #9C6615;
 .timeline li:not(.stack).visible {
 	opacity:1;
 	transform:translateX(0);
+  width: auto !important;
 }
 
 
