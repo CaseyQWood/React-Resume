@@ -704,7 +704,7 @@ experience page
 .experience__container {
   background-color: rgba(22,38,46,1);
   // background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
-  height: 75vh;
+  // height: 75vh;
   color: #D3D0CB;
   font-family: 'Fira Sans';
   padding: 3em;
@@ -742,6 +742,7 @@ experience page
 
   .experience__list {
     width: 50%;
+
   }
 
   .experience__icon {
@@ -773,7 +774,7 @@ experience page
   position: relative;
   font-family: 'Fira Sans';
   color: #D3D0CB;
-  height: 25vh;
+  height: 30vh;
 
   .footer__quote{
     width: 100%;
