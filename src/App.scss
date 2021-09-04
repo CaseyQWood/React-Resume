@@ -51,6 +51,14 @@ body {
 */
 $orange: #9C6615;
 
+@media (min-width: 1000px) {
+  
+}
+
+@media (max-width: 1001px) {
+ 
+}
+
 .hero__container {
   height: 100vh;
   background: url('../src/images/image-from-rawpixel-id-2252698-jpeg.jpg');
@@ -287,7 +295,7 @@ $orange: #9C6615;
   width: 90px;
   height: 90px;
   background: #f1f1f1;
-  margin: 10px;
+  margin: 16px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
   color: #9C6615;
@@ -332,11 +340,9 @@ $orange: #9C6615;
 }
 
 .about__container {
-  height: calc(70vh - 32px);
   background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
 
   h2 {
-    height: 10%;
     margin: 0 5%;
     padding-top: 1em;
     color: #D3D0CB;
@@ -348,7 +354,6 @@ $orange: #9C6615;
   }
 
   .about__profile-img {
-    margin: 2em;
     img{
       height: 35vh;
     
@@ -361,17 +366,15 @@ $orange: #9C6615;
   background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
   height: 80%;
   margin: 0 5%;
-  border-right: #9C6615 3px solid;
+  
   font-family: 'Fira Sans';
   justify-content: space-between;
 }
 
 .about__description {
   color: #D3D0CB;
-  margin: auto 0;
   text-align: center;
   width: 75%;
-  padding-right: 3em;
 
   p {
     font-size: 20px;
@@ -412,34 +415,66 @@ $orange: #9C6615;
 
 @media (max-width: 1000px) {
 
+  .about__container {
+    height: calc(80vh - 32px);
+
+    h2 {
+      height: 5%;
+    }
+  }
+
   .about__body { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80%;
+    height: 100%;
     margin: 0 5%;
 
   }
   
   .about__description {
     text-align: center;
+    margin-bottom: auto;
+    p {
+      padding: 1em 0;
+      margin-bottom: 5em;
+    }
+  }
+
+  .about__profile-img {
+    margin: 9em;
   }
 
 }
 
 @media (min-width: 1001px) {
+
+  .about__container {
+    height: calc(70vh - 32px);
+
+    h2 {
+      height: 10%;
+    }
+  }
   .about__body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 80%;
+    border-right: #9C6615 3px solid;
   }
   
   .about__description {
     text-align: left;
+    padding-right: 3em;
+    margin: auto 0;
     p {
       padding: 1em 0;
-
     }
+  }
+
+  .about__profile-img {
+    margin: 2em;
   }
 }
 
@@ -449,7 +484,7 @@ $orange: #9C6615;
 
 @media (max-width: 1000px) {
   .slider__container {
-    height: calc(30vh - 32px);
+    height: calc(20vh - 32px);
   }
 }
 @media (min-width: 1001px) {
@@ -599,7 +634,7 @@ $orange: #9C6615;
 
   .portfolio__description {
     border-top:1px solid #9C6615;
-    width: calc(100% / 2) ;
+    
     font-family: 'Fira Sans';
   }
 
@@ -661,18 +696,16 @@ $orange: #9C6615;
 	position:absolute;
 	top:0;
 	bottom:0;
-	left:50%;
+	// left:50%;
 	width: 1px;
 	background-color: #9C6615;
 }
 .timeline li:not(.stack){
   display: flex;
   justify-content: space-between;
-	
 	position:relative;
 	min-height:100px;
 	margin-bottom:20px;
-	text-align: right;
 	transition:.3s;
 	opacity:0;
 	transform: translateX(-10%);
@@ -684,7 +717,7 @@ $orange: #9C6615;
 	height: 10px;
 	position: absolute;
 	top: 0;
-	right: 50%;
+	
 	background: #9C6615;
 	border-radius:50%;
 	box-sizing:border-box;
@@ -701,7 +734,7 @@ $orange: #9C6615;
 .timeline li:not(.stack):nth-child(2n) {
   display: flex;
   width: 90%;
-	flex-direction: row-reverse;
+	// flex-direction: row-reverse;
 	text-align: left;
 	transform: translateX(10%);
 }
@@ -715,6 +748,66 @@ $orange: #9C6615;
   width: auto !important;
 }
 
+
+@media (max-width: 1000px) {
+  .timeline {
+    flex-direction: column;
+
+    li { 
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .timeline:before{
+    left:0;
+  }
+
+  .timeline li:not(.stack) {
+
+  }
+
+  .timeline li:not(.stack):nth-child(2n) {
+
+  }
+
+  .timeline .portfolio__description:before {
+    right: 100%;
+  }
+
+  .portfolio__description {
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 1001px) {
+  .timeline {
+    
+  }
+
+  .timeline:before{
+    left:50%;
+  }
+
+  .timeline li:not(.stack) {
+    text-align: right;
+  }
+
+  .timeline li:not(.stack):nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .timeline .portfolio__description:before {
+    right: 50%;
+  }
+
+  .portfolio__description {
+    width: calc(100% / 2) ;
+  }
+
+}
 
 
 /*

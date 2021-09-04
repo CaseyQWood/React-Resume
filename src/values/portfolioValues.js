@@ -24,7 +24,7 @@ const portfolioScripts = [
     name: 'Three.js Journey',
     description: 'An extensive course covering various components of 3d design/creation using WbGL and the Three.JS library. Created by Bruno Simon a french creative developer specialized in WebGL with a history of teaching WebGl in various schools for more then 7 years',
     stack: ['JavaScript', 'threeJS', 'CannonJS', 'WebGL', 'TypeScript', 'HTML/CSS'],
-    image: [galaxy, helmet]
+    image: [helmet, galaxy]
   },
   {
     name: 'Smart To-Do',
