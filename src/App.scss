@@ -52,10 +52,19 @@ body {
 $orange: #9C6615;
 
 @media (min-width: 1000px) {
+
+  .animation {
+    width: 60em;
+    margin: 10% auto 0 auto;
+  }
   
 }
 
 @media (max-width: 1001px) {
+
+  .animation {
+    margin: 60% auto 0 auto;
+  }
  
 }
 
@@ -81,7 +90,7 @@ $orange: #9C6615;
 
   width: 40em;
   height: 4em;
-  margin: 10% auto 0 auto;
+  
   position: relative;
 }
 
@@ -814,9 +823,47 @@ $orange: #9C6615;
 experience page 
 */
 
+@media (min-width: 1001px) {
+  .experience__list {
+    width: 50%;
+  }
+  .experience__icon {
+    width: 30%;
+    padding: 5%;
+    margin: auto;
+    svg {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+      path { 
+        fill: #9C6615;
+      }
+    }
+  }
+  .experience__container {
+    background-color: rgba(22,38,46,1);
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .experience__list {
+    width: 100%;
+  }
+  .experience__icon {
+    display: none;
+  }
+  .experience__container {
+    background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
+
+    height: 85vh;
+  }
+}
+
+
+
 .experience__container {
-  background-color: rgba(22,38,46,1);
-  // background: linear-gradient(0deg, rgba(36,37,38,1) 2%, rgba(22,38,46,1) 29%);
+  // background-color: rgba(22,38,46,1);
   // height: 75vh;
   color: #D3D0CB;
   font-family: 'Fira Sans';
@@ -853,10 +900,7 @@ experience page
     border-left: #9C6615 3px solid;
   }
 
-  .experience__list {
-    width: 50%;
 
-  }
 
   .experience__icon {
     width: 30%;
@@ -866,20 +910,27 @@ experience page
       width: 100%;
       height: auto;
       filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-
-      
       path { 
         fill: #9C6615;
-        
       }
     }
   }
-  
 }
 
 /*
  footer page
 */
+@media (min-width: 1001px) {
+  .footer__container {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer__container {
+    height: 15vh;
+  }
+}
 
 .footer__container {
   background-color: rgba(36,37,38,1);
@@ -887,7 +938,6 @@ experience page
   position: relative;
   font-family: 'Fira Sans';
   color: #D3D0CB;
-  height: 30vh;
 
   .footer__quote{
     width: 100%;
